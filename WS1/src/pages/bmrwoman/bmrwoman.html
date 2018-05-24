@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>BMR สำหรับผู้หญิง</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="row">
+        <ion-slides pager>
+            
+              <ion-slide style="">
+                <img src="../../assets/imgs/nook.jpg" alt="">
+              </ion-slide>
+        </ion-slides>  
+      </div>
+  
+      <ion-item>
+          <ion-label color="dark" stacked><h2>น้ำหนัก</h2></ion-label>
+          <ion-input [(ngModel)]="Weight" type="text" placeholder="น้ำหนัก/Kg"></ion-input>
+        </ion-item>
+
+      <ion-item>
+          <ion-label color="dark" stacked><h2>ส่วนสูง</h2></ion-label>
+          <ion-input  [(ngModel)]="Height"  type="text" placeholder="ส่วนสูง/Cm"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="dark" stacked><h2>อายุ</h2></ion-label>
+            <ion-input [(ngModel)]="age" type="text" placeholder="อายุ"></ion-input>
+          </ion-item>
+        
+        
+
+          <div padding>
+              <button (click)="gotowoman()" ion-button color="danger" block>คำนวณ</button>
+              </div>
+
+              <h3>BMR สำหรับผู้หญิง  ของคุณคือ {{ bmrwoman }}</h3>
+              <h3>ออกกำลังกายน้อยมากหรือไม่ออกเลย  ของคุณคือ {{ tdee1 }}</h3>
+              <h3>ออกกำลังกาย  1 - 3 ครั้งต่อสัปดาห์  ของคุณคือ {{ tdee2 }}</h3>
+              <h3>ออกกำลังกาย  4 - 5 ครั้งต่อสัปดาห์  ของคุณคือ {{ tdee3 }}</h3>
+              <h3>ออกกำลังกาย  6 - 7 ครั้งต่อสัปดาห์  ของคุณคือ {{ tdee4 }}</h3>
+              <h3>ออกกำลังกายวันละ 2 ครั้งขึ้นไป  ของคุณคือ {{ tdee5 }}</h3>
+
+</ion-content>

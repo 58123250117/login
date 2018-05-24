@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>การเผาผลาญพลังงาน</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>    
+       <div class="row">
+         <ion-slides pager>
+             
+               <ion-slide style="">
+                 <img src="../../assets/imgs/logo-BMR-RGB.jpg" alt="">
+               </ion-slide>
+               
+               <ion-slide style="">
+                 <img src="../../assets/imgs/featured.png" alt="">
+               </ion-slide>
+         </ion-slides>  
+       </div>
+       <div class="row">
+          <ion-list>
+                  <button ion-button color="danger" ion-button icon-start (click)="bmrwoman()" padding>
+                      <ion-icon name="ios-woman"></ion-icon>
+                      <span>BMR สำหรับผู้หญิง</span>
+                    </button>
+          </ion-list>     
+      </div>
+      <div class="row">
+          <ion-list>
+                  <button ion-button color="dark" ion-button icon-start (click)="bmrman()" padding>
+                      <ion-icon name="ios-man"></ion-icon>
+                      <span>BMR สำหรับผู้ชาย</span>
+                    </button>
+          </ion-list>     
+      </div>
+   </ion-content>

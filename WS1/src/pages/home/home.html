@@ -1,17 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>หน้าแรก</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<div class="row">
+    
+  <ion-slides pager>
+      
+        <ion-slide style="">
+          <img src="../../assets/imgs/Health.jpg" alt="">
+        </ion-slide>
+        
+        <ion-slide style="">
+          <img src="../../assets/imgs/Health1.jpg" alt="">
+        </ion-slide>
+      
+        <ion-slide style="">
+          <img src="../../assets/imgs/health (1).jpg" alt="">
+        </ion-slide>  
+  </ion-slides>  
+</div>
+
+<div class="row">
+    <ion-list>
+            <button ion-button color="secondary" ion-button icon-start (click)="bmi()" padding>
+                <ion-icon name="ios-body-outline"></ion-icon>
+                <span>BMI</span>
+              </button>
+    </ion-list>     
+</div>
+<div class="row">
+  <ion-list>
+      <button ion-button color="danger" ion-button icon-start (click)="bmr()" padding>
+          <ion-icon name="ios-bicycle"></ion-icon>
+          <span>BMR</span>
+        </button>
+  </ion-list>     
+</div>
+
 </ion-content>

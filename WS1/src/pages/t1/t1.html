@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>TDEE</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label color="dark" stacked><h2>ค่า BMR</h2></ion-label>
+        <ion-input  [(ngModel)]="bmr"  type="text" placeholder="BMR"></ion-input>
+      </ion-item>
+
+      <div padding>
+          <button (click)="tdeee()" ion-button color="prmiy" block>คำนวณ</button>
+          </div>
+
+          <h3>TDEE  ของคุณคือ {{ tdee | number:'2.2-3' }}</h3>
+</ion-content>
